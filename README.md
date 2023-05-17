@@ -72,24 +72,23 @@ Results: The R-squared scores and RMSE values are printed to assess the performa
 The Results section of this project provides an overview of the performance of the trained machine learning models for yearly mental disorder forecasting. Three different regression models were evaluated: Random Forest Regression, Decision Tree Regression, and Linear Regression.
 
 Random Forest Regression:
-
-R-squared score: 0.9996331772476117
-R2 Score: 0.9996331772476117
+R-squared score: 0.9996331772476117 and
 RMSE: 0.011423657211499086
+
 The Random Forest Regression model achieved an outstanding R-squared score of 0.9996331772476117. This indicates that the model explains approximately 99.96% of the variance in the target variable, capturing the patterns and trends in the data exceptionally well. The high R2 Score further confirms the model's performance. Additionally, the Root Mean Squared Error (RMSE) of 0.011423657211499086 suggests that the average difference between the predicted and actual values is very low, indicating the model's accuracy.
 
 Decision Tree Regression:
 
-R-squared score: 0.9993736878978943
-R2 Score: 0.9993736878978943
+R-squared score: 0.9993736878978943 and
 RMSE: 0.014737179665872322
+
 The Decision Tree Regression model also performed remarkably well, with an R-squared score of 0.9993736878978943, indicating an excellent fit to the data. The R2 Score confirms this performance level. The RMSE value of 0.014737179665872322 suggests a slightly higher average difference between the predicted and actual values compared to the Random Forest Regression model, but it still reflects a good level of accuracy.
 
 Linear Regression:
 
-R-squared score: 0.9869736705560125
-R2 Score: 0.9869736705560125
+R-squared score: 0.9869736705560125 and
 RMSE: 0.06222799210678069
+
 The Linear Regression model achieved a respectable R-squared score of 0.9869736705560125. This indicates that the model explains approximately 98.70% of the variance in the target variable, capturing a significant portion of the patterns in the data. The R2 Score confirms this performance. The RMSE value of 0.06222799210678069 suggests a higher average difference between the predicted and actual values compared to the other models. However, it still provides valuable insights into mental disorder prevalence forecasting.
 
 ## Model Integration
