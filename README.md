@@ -69,27 +69,27 @@ Results: The R-squared scores and RMSE values are printed to assess the performa
 
 ## Results
 
-The Results section of this project provides an overview of the performance of the trained machine learning models for yearly mental disorder forecasting. Three different regression models were evaluated: Random Forest Regression, Decision Tree Regression, and Linear Regression.
-
 Random Forest Regression:
-R-squared score: 0.9996331772476117 and
-RMSE: 0.011423657211499086
-
-The Random Forest Regression model achieved an outstanding R-squared score of 0.9996331772476117. This indicates that the model explains approximately 99.96% of the variance in the target variable, capturing the patterns and trends in the data exceptionally well. The high R2 Score further confirms the model's performance. Additionally, the Root Mean Squared Error (RMSE) of 0.011423657211499086 suggests that the average difference between the predicted and actual values is very low, indicating the model's accuracy.
+R-squared score: 0.9996
+RMSE: 0.0114
+The Random Forest Regression model achieved an impressive R-squared score of 0.9996, indicating that it explains 99.96% of the variance in the data. Additionally, the RMSE value of 0.0114 suggests that the model's predictions have a small average deviation from the actual values.
 
 Decision Tree Regression:
-
-R-squared score: 0.9993736878978943 and
-RMSE: 0.014737179665872322
-
-The Decision Tree Regression model also performed remarkably well, with an R-squared score of 0.9993736878978943, indicating an excellent fit to the data. The R2 Score confirms this performance level. The RMSE value of 0.014737179665872322 suggests a slightly higher average difference between the predicted and actual values compared to the Random Forest Regression model, but it still reflects a good level of accuracy.
+R-squared score: 0.9994
+RMSE: 0.0147
+The Decision Tree Regression model performed exceptionally well, with an R-squared score of 0.9994. This indicates a high degree of accuracy in predicting mental disorder prevalence. The RMSE value of 0.0147 further supports the model's effectiveness in generating precise estimates.
 
 Linear Regression:
+R-squared score: 0.9870
+RMSE: 0.0622
+The Linear Regression model achieved a respectable R-squared score of 0.9870, indicating a good fit to the data. Although slightly lower than the tree-based models, the RMSE value of 0.0622 suggests that the model's predictions have a moderate level of deviation from the actual values.
 
-R-squared score: 0.9869736705560125 and
-RMSE: 0.06222799210678069
+Ridge Regression:
+R-squared score: 0.9846
+RMSE: 0.0696
+The Ridge Regression model also provided reliable estimates, with an R-squared score of 0.9846. This indicates a strong linear relationship between the predictor variables and the mental disorder prevalence rates. The RMSE value of 0.0696 suggests a slightly higher average deviation compared to the other models.
 
-The Linear Regression model achieved a respectable R-squared score of 0.9869736705560125. This indicates that the model explains approximately 98.70% of the variance in the target variable, capturing a significant portion of the patterns in the data. The R2 Score confirms this performance. The RMSE value of 0.06222799210678069 suggests a higher average difference between the predicted and actual values compared to the other models. However, it still provides valuable insights into mental disorder prevalence forecasting.
+These results demonstrate the effectiveness of the machine learning models in predicting the percentage of the population affected by mental disorders in different countries. Both the Random Forest and Decision Tree Regression models outperformed the Linear Regression and Ridge Regression models, showcasing their ability to capture complex relationships within the data. However, all models achieved high R-squared scores, indicating their overall success in explaining the variation in mental disorder prevalence. The low RMSE values across the models further indicate the accuracy of their predictions.
 
 ## Model Integration
 
