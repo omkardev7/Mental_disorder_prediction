@@ -16,8 +16,35 @@ disorder_names = ['Schizophrenia', 'Bipolar disorder', 'Eating disorders',
                   'Anxiety disorders', 'Drug use disorders', 'Depression',
                   'Alcohol use disorders']
 
+# Set the page configuration
+st.set_page_config(layout="wide", page_title="Mental Disorder Forecaster",
+                   page_icon=":brain:", initial_sidebar_state="expanded")
+
 # Streamlit app
-st.title("Mental Disorder forecaster")
+st.title("Mental Disorder Forecaster")
+st.markdown(
+    "<h3 style='text-align: left; color: white;'>Predicting the percentage of a particular country's population affected by mental disorders</h3>",
+    unsafe_allow_html=True
+)
+
+# Set the background color and text color
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: white;
+        color: black;
+    }
+    
+    table.dataframe {
+        color: black;
+    }
+    
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # Country options
 country_options = ['Argentina', 'Australia', 'Belgium', 'Brazil', 'Canada', 'China',
@@ -47,5 +74,22 @@ if st.button("Predict"):
     # Create a dataframe for the predictions
     predictions_df = pd.DataFrame(predictions, columns=disorder_names)
 
-    # Display the predictions in a table
-    st.table(predictions_df)
+    
+    st.markdown(
+    "<h3 style='text-align: left; color: white;'>Output:</h3><br><h5 style='text-align: left; color: white;'>Percentage of the selectd country's population affected by mental disorders for selected year:</h5>",
+    unsafe_allow_html=True
+)
+    # # Display the predictions in a table
+    # st.table(predictions_df)
+
+    
+
+    # # Apply CSS style to the dataframe
+    # st.dataframe(predictions_df.style.set_properties(**{'background-color': 'white',
+    #                                                     'color': 'black'}))
+
+    # Increase text size using HTML formatting and set background color to white
+    html_table = predictions_df.style.set_table_attributes('style="font-size: 25px; background-color: white; color: black;"').render()
+
+    # Display the dataframe with increased text size
+    st.write(html_table, unsafe_allow_html=True)
